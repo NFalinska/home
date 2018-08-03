@@ -1,0 +1,289 @@
+* {
+	font-family: sans-serif;
+}
+
+body {
+	background: linear-gradient(to bottom, cornflowerblue -6%, aliceblue 7%);
+}
+header {
+    width: 100%;
+    height: 174px;
+    font-size: 1.2em;
+}
+
+h {
+	color: azure;
+	font-size: 65px;
+	display: flex;
+	margin-top: 130px;
+	font-style: italic;
+}
+
+.container {
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 34px;
+	border-radius: 15px 15px 0 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1) inset; 
+	padding-bottom: 30px;
+	padding-bottom: 30px;
+	
+}
+
+.wrapper {
+	 width: 1080px; 
+	 margin: auto; 
+	 text-align: left;
+	 display: flex;
+	 flex-direction: column;
+/*	 max-width: 90%;*/
+}
+
+nav {
+	height: 24px;
+    width: 470px;
+	background-color: #7ca4f3;
+	align-self: flex-end;
+	margin-right: 25px;
+	border-radius: 10px 10px 0 0;
+	padding-bottom: 30px;
+	box-shadow: inset 0 0 6px;
+	
+}
+
+nav li {
+	float: left;
+	margin-right: 20px;
+}
+
+ ul {
+	 list-style-type: none;
+}
+
+nav li a {
+    display: block;
+    font: 17px Arial,Sans-serif;
+    color: #fff;
+    height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    line-height: 34px;
+    font-weight: bold;
+    overflow: hidden;
+    text-shadow: 0 0 5px #000000;
+}
+
+nav li a:hover {
+		color: skyblue;
+	}
+
+section {
+	width: 600px;
+} 
+
+aside {
+	width: 193px;
+	padding-top: 5px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.subscribe {
+	width: 161px;
+	height: 156px;
+	background-color: #ffffcc;
+}
+aside ul {
+    border-radius: 20px; 
+	background: linear-gradient(to bottom, black -50%, white 3%);
+	list-style:none;
+	font-size: 12px;
+	padding: 22px 22px 0;
+}
+
+aside ul li{
+	padding-bottom: 5px;
+    border-bottom: 1px dotted #b8b8b8;
+	margin:0 0 5px;
+}
+ul a {
+	text-decoration: none;
+	color: grey;
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+
+ul a:hover {
+    color: hotpink;
+   } 
+.categories, .archives{
+	background: linear-gradient(to bottom, hotpink, deeppink);
+	border-radius: 15px; 
+	height: 67px;
+	color: white;
+	padding-bottom: 0;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.2em;
+
+}
+
+.pic_submit {
+	text-align: -webkit-center;
+	font-size: 12px;
+	margin-top: 30px;
+}
+
+.archives { 
+	background: linear-gradient(to bottom, orange, yellow);
+	height: 77px;
+	margin-top: 30px;
+	padding-left: 15px;
+}
+
+h2 {
+	padding-left: 15px;
+	font: bold 24px/1.25, sans-serif;
+    width: 440px;
+	background: linear-gradient(to top, pink -10%, white 40%);
+	border-radius: 15px;
+	height: 38px;
+}
+h2 a {
+	color: #f33c5d;
+	text-decoration: none;
+}
+h2 a:hover {
+	text-decoration: underline;
+	
+}
+
+.photo {
+	border: solid 12px #e8f6fc;
+	display: block;
+    margin: 0 auto;
+}
+
+
+
+figcaption, .description, h4, p{
+	text-align: center;
+	font-family: arial;
+	font-size: 12px;
+}
+
+.description {
+	font-style: italic;
+	margin-top: 30px;
+}
+
+h4, .number {
+	font-weight: bold;
+}
+
+.rate {
+	padding-top: 5px;
+	width: 600px;
+	background: whitesmoke;
+	padding-bottom: 20px;	
+}
+.vote {
+	display: flex;
+	justify-content: center;
+}
+.rating {
+    padding-top: 7px;
+	padding-right: 7px;
+
+}
+
+.rating:not(:checked) > input {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    overflow:hidden;
+    cursor:pointer;
+    color:#ddd;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+.network {
+	text-align: center;
+}
+.network a {
+	color: gray;
+	font-size: 12px;
+	font-family: sans-serif;
+	text-decoration: none;
+	
+}
+
+.network a:hover {
+	text-decoration: underline;
+}
+
+.but_subscribe {
+    margin-top: 30px;
+	margin-left: 30px;
+}
+.name_input {
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	margin-left: 5px;
+}
+.email_input {
+	margin-left:4px;
+}
+footer a {
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: rgb(0, 93, 172);
+	font-size: 16px;
+}
+footer a:hover {
+	color: darkturquoise;
+}
+footer {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 12px;
+
+}
